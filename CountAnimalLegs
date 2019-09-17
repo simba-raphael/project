@@ -1,0 +1,22 @@
+<?php
+
+Class Animal{
+    
+    public $Cows ;
+    public $Pigs ;
+    public $Chickens ;
+    
+    
+    public function CountLegs($Cows , $Pigs, $Chickens){
+        $this->Cows = $Cows;
+        $this->Pigs= $Pigs;
+        $this->Chickens =  $Chickens;
+        echo $Cows *4+ $Pigs * 4+ $Chickens * 2 ;
+    }
+    
+   
+    
+}
+$r = new Animal ();
+$r ->CountLegs(2,4,5);
+?>
